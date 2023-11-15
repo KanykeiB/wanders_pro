@@ -7,7 +7,7 @@ const CollectionCard = ({ src, children, onClick, page, category }) => {
     return (
         <div className={styles.collectionCardWrap} >
             <Link to={`/${page}/${category}`}>
-                <img onClick={onClick} src={src} alt="noPictureWasFound " />
+                <img src={src} alt="noPictureWasFound " />
                 <p className={styles.collectionCardTitle}>{children} </p>
             </Link>
 
