@@ -1,0 +1,17 @@
+.collectionCardWrap{
+    position: relative;
+}
+.collectionCardWrap img{
+    border-radius: 20px;
+    width: 100%;
+    height:100%;
+}
+.collectionCardTitle{
+    color: #FFF;
+    font-family:Arial;
+    font-size: 25px;
+    font-weight: 700;
+    position: absolute;
+    top:105px;
+    left:10px;
+}

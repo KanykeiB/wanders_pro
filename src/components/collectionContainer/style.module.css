@@ -1,0 +1,17 @@
+.collectionContainerWrap{
+    width: 1120px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(265px, 1fr));
+    gap: 16px;
+}
+.showMoreButton{
+    width: 1120px;
+    padding: 25px 492px;
+    font-family:Arial;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 20px;
+    background: #EAEBE7; 
+    border: none;   
+}
+
