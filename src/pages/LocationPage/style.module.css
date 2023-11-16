@@ -1,0 +1,18 @@
+.locationContainer{
+    width: 1120px;
+    margin: 0 auto;
+}
+.locationPageTitle{
+    font-family: Arial;
+    font-size: 60px;
+    font-weight: 800;
+}
+@media screen and (max-width:500px) {
+    .locationContainer{
+        width: 500px;
+    }
+    .locationPageTitle{
+        font-size: 36px;
+        padding-left: 50px;
+    }
+}
