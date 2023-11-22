@@ -3,13 +3,18 @@ const mockApiDataTour =  [
       {
         "id": 1,
         "images": [
-          "image1.jpg",
-          "image2.jpg",
-          "image3.jpg"
+          'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/toomas-tartes-yizrl9n-eda-unsplash-1571336397.jpg?crop=0.601xw:0.899xh;0.340xw,0.101xh&resize=640:*',
+          'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/toomas-tartes-yizrl9n-eda-unsplash-1571336397.jpg?crop=0.601xw:0.899xh;0.340xw,0.101xh&resize=640:*',
+          'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/toomas-tartes-yizrl9n-eda-unsplash-1571336397.jpg?crop=0.601xw:0.899xh;0.340xw,0.101xh&resize=640:*',
+          'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/toomas-tartes-yizrl9n-eda-unsplash-1571336397.jpg?crop=0.601xw:0.899xh;0.340xw,0.101xh&resize=640:*'
+          ,
+          'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/toomas-tartes-yizrl9n-eda-unsplash-1571336397.jpg?crop=0.601xw:0.899xh;0.340xw,0.101xh&resize=640:*',
+          'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/toomas-tartes-yizrl9n-eda-unsplash-1571336397.jpg?crop=0.601xw:0.899xh;0.340xw,0.101xh&resize=640:*'
         ],
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         "rating": 4.5,
         "name": "Иссык-Куль. Жемчужина Кыргызстана.",
+        'state':"Иссык-Куль",
         "programs": [
           {
             "title": "День 1: Бишкек - знакомство",
