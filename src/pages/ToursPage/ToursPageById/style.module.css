@@ -1,0 +1,14 @@
+.dropDownTitleWrap{
+    display: flex;
+    width: 770px;
+    justify-content: space-between;
+}
+.sectionName{
+    font-size: 36px;
+    font-weight: 700;
+}
+.showAllButton{
+    font-size: 16px;
+    background-color: transparent;
+    border: none;
+}
