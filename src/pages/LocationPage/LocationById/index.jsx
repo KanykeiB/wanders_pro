@@ -1,13 +1,21 @@
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import styles from './style.module.css'
 import mockApiData from '../../../components/mockApi/mockapiById';
+import Modal from '@mui/material/Modal';
+import SwiperCustom from '../../../components/swiperCustom'
+import { SwiperSlide } from 'swiper/react';
+import 'swiper/css';
 
 const LocationPageById = () => {
     const { locationSpec } = useParams()
+    const [visiblePic, setVisiblePic] = useState(3)
     const [visibleText, setVisibleText] = useState(500)
-    const handleReadMore =()=>{
-        setVisibleText((prev)=> prev + 300)
+    const [open, setOpen] = useState(false);
+    const handleOpen = () => setOpen(true);
+    const handleClose = () => setOpen(false);
+    const handleReadMore = () => {
+        setVisibleText((prev) => prev + 300)
     }
     return (
         <div className={styles.locationByIdContainer}>
@@ -34,28 +42,46 @@ const LocationPageById = () => {
                                     <img src={el.pictures[1]} alt="" />
                                     <img src={el.pictures[2]} alt="" />
                                 </div>
+                                {el.pictures.length > visiblePic && <button
+                                    className={styles.showMoreButton}
+                                    onClick={handleOpen}>Показать еще фото</button>}
                             </div>
                         </div>
+
+                        <Modal
+                            open={open}
+                            onClose={handleClose}
+                        >
+                            <div className={styles.modalWindow}>
+                                <SwiperCustom>
+                                    {el.pictures.map(pic =>
+                                        <SwiperSlide className={styles.mySwiperSlide}>
+                                            <img src={pic} alt="pic was not found" />
+                                        </SwiperSlide>
+                                    )}
+                                </SwiperCustom>
+                            </div>
+                        </Modal>
                     </div>
                     <div>
                         <p className={styles.description}>Описание</p>
-                        <p>{el.description}</p>
+                        <p className={styles.mainText}>{el.description}</p>
                         <p className={styles.place}>{el.place}</p>
-                        <p>{el.additionalDescription.slice(0,visibleText)}</p>
-                        {el.additionalDescription.length> visibleText && 
-                        <button onClick={handleReadMore} className={styles.readMoreButton}>Читать далее</button> }
+                        <p className={styles.mainText}>{el.additionalDescription.slice(0, visibleText)}</p>
+                        {el.additionalDescription.length > visibleText &&
+                            <button onClick={handleReadMore} className={styles.readMoreButton}>Читать далее</button>}
                     </div>
                     <div>
                         <p className={styles.description}>Как добраться</p>
-                        <p>{el.howToReach}</p>
-                        {el.transoprt.map(transport=>(
-                        <button className={styles.transportButton}>{transport}</button>))}
-                        <p className={styles.smallerText}>Время в пути: <span>{el.time}</span></p> 
+                        <p className={styles.mainText}>{el.howToReach}</p>
+                        {el.transoprt.map(transport => (
+                            <button className={styles.transportButton}>{transport}</button>))}
+                        <p className={styles.smallerText}>Время в пути: <span>{el.time}</span></p>
                         <p className={styles.smallerText}>Стоимость: <span>{el.price}</span></p>
                     </div>
                     <div>
-                    <p className={styles.description}>Туры к ущелью Ала-Арча</p>
-                    <span>to be filled</span>
+                        <p className={styles.description}>Туры к ущелью Ала-Арча</p>
+                        <span>to be filled</span>
                     </div>
 
                 </div>

@@ -7,6 +7,7 @@
     width: 1180px;
     margin: 0 auto;
 }
+
 .locationTitle{
     font-size: 60px;
     font-weight: 700;
@@ -21,6 +22,28 @@
 .descPart{
     width: 30%;
 }
+.showMoreButton{
+    position: absolute;
+    padding: 18px 35px;
+    border-radius: 20px;
+    background: #FFF;
+    bottom:5%;
+    right:2%;
+}
+.modalWindow{
+    margin: 200px auto;
+    width: 1200px;
+    height: 800px;
+    background-color: transparent;
+}
+
+.mySwiperSlide img {
+    display: block;
+    width: 85%;
+    margin: 0 auto;
+    height: 100%;
+    object-fit: cover;
+  }
 .description{
     font-size: 40px;
     font-weight: 700;
@@ -46,6 +69,9 @@
 .smallerText{
     font-weight: 700;
 }
+.mainText{
+    text-align: justify;
+}
 
 .lPicPart{
     width: 65%;
@@ -64,11 +90,10 @@
     font-size: 16px;
 }
 
-
-
 .imgWrap{
     display: flex;
     justify-content:space-around;
+    position:relative;
 }
 .imgItem1{
     width: 366px;
