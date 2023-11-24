@@ -20,7 +20,7 @@ const TourCard = ({tour}) => {
 const card = {
     borderRadius: "15px",
     background: "#F3F3F3",
-    width: '270px',
+    width: '100%',
     height: '100%',
     transition: '1.3s',
     // cursor: 'pointer'

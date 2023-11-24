@@ -12,14 +12,16 @@ const ToursPage = () => {
 
     useEffect(() => {
         dispatch(getTourList())
-    }, [tours])
+    }, [dispatch])
 
     return (
-        <Box>
-            <Box sx={tours_section}>
+        <Box className={'container'}>
+            <Box className={'row'}>
                 {
                     data?.map(tour => (
-                        <TourCard tour={tour}/>
+                        <Box className={'col-3'} sx={{marginBottom: '20px'}}>
+                            <TourCard tour={tour}/>
+                        </Box>
                     ))
                 }
             </Box>
@@ -27,11 +29,5 @@ const ToursPage = () => {
     );
 };
 
-const tours_section = {
-    maxWidth: '1140px',
-    margin: '0 auto',
-    display: 'flex',
-    gap: '20px',
-}
 
 export default ToursPage;
