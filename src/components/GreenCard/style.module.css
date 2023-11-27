@@ -1,0 +1,55 @@
+.Card{
+    background-color: rgba(196, 234, 214, 0.5);
+    max-width: 606px;
+    min-height: 240px;
+    border-radius: 30px;
+    position: relative;
+    z-index: 1;
+    padding: 30px;
+}
+
+.CardWrap{
+    display: flex;
+    gap: 80px;
+}
+
+.avatar{
+ margin-top: 15px;
+}
+.avatar img{
+    border-radius: 50%;
+    width: 112px;
+}
+.avatar h3{
+    font-size: 30px;
+}
+.avatar p{
+    font-size: 20px;
+    opacity: 60%;
+}
+
+.btnWrap button{
+    border: none;
+    border-radius: 10px;
+    background-color: #0FA958;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    padding: 8px 30px;
+    margin-top: 30px;
+}
+.CardDesc{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.CardDesc p{
+
+    font-size: 16px;
+
+}
+
+.info{
+    display: flex;
+    gap: 10px;
+}

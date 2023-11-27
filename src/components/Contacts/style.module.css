@@ -2,7 +2,7 @@
     background-color: #F7F7F7;
     border-radius: 50px;
     max-width: 1020px;
-    min-height: 510px;
+    max-height: 510px;
     padding: 81px 142px 108px 63px;
     margin: 100px auto;
 
@@ -59,6 +59,7 @@
 .contacts{
     display: flex;
     flex-direction: column;
+    gap: 15px;
 
 }
 
