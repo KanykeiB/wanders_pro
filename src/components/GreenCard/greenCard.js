@@ -18,6 +18,7 @@ const GreenCard = () => {
                 { author: "Владимир", text: "Отличный решатель задач." },
                 { author: "Елена", text: "Всегда соблюдает сроки." }
             ],
+            verification: true,
             location: 'Иссык-Куль, Чуй, Талас'
         }
     ];
@@ -51,7 +52,12 @@ const GreenCard = () => {
 
                                         <div className={style.info}><div> <RateStarIcon/> </div> <p>{arithmeticRate} ({el.reviews.length} отзывов)</p></div>
                                     }
-                                <div className={style.info}><div><VercIcon/></div><p>Личность поттверждена</p></div>
+                                {
+                                    el.verification ?
+                                        <div className={style.info}><div><VercIcon/></div><p>Личность подтверждена</p></div>
+                                        :
+                                        <div className={style.info}><p>Личность не подтверждена</p></div>
+                                }
                                 <div><p> Гид-инструктор на {el.location}</p></div>
                                 <div className={style.btnWrap}>
                                     <button>Написать</button>
