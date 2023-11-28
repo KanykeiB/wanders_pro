@@ -6,21 +6,38 @@ import RateStarIcon from "../Icons/rateStarIcon";
 
 const GreenCard = () => {
 
-    const guid = [
+    const guide = [
         {
             name: 'Замир',
             lastname:'Русланов',
             position: 'организатор',
             image: 'alexey_image.jpg',
-            rating: 4,
-            description: 'Гид-инструктор на Иссык-Куль, Чуй, Талас'
+            ratings: [4.5, 5, 4.2, 4.8, 4],
+            reviews: [
+                { author: "Анна", text: "Отличный командный игрок!" },
+                { author: "Владимир", text: "Отличный решатель задач." },
+                { author: "Елена", text: "Всегда соблюдает сроки." }
+            ],
+            location: 'Иссык-Куль, Чуй, Талас'
         }
     ];
+
+    const rate = guide.map(el => el.ratings)
+
+    const arth = rate.reduce(function (acc, current){
+        return acc + current
+    }, 0)
+
+    const num = parseInt(arth)
+
+    const arithmeticRate = (num / rate.length)
+
+
     return (
         <div className={style.Card}>
 
                 {
-                    guid.map((el, idx) =>
+                    guide.map((el, idx) =>
                         <div className={style.CardWrap} key={idx}>
                             <div className={style.avatar}>
                                 <img src={image} alt=""/>
@@ -30,12 +47,12 @@ const GreenCard = () => {
                                 </div>
                             </div>
                             <div className={style.CardDesc}>
-                                    { el.rating &&
+                                    { el.ratings &&
 
-                                        <div className={style.info}><div> <RateStarIcon/> </div> <p>{el.rating} (17 отзывов)</p></div>
+                                        <div className={style.info}><div> <RateStarIcon/> </div> <p>{arithmeticRate} ({el.reviews.length} отзывов)</p></div>
                                     }
                                 <div className={style.info}><div><VercIcon/></div><p>Личность поттверждена</p></div>
-                                <div><p>{el.description}</p></div>
+                                <div><p> Гид-инструктор на {el.location}</p></div>
                                 <div className={style.btnWrap}>
                                     <button>Написать</button>
                                 </div>
