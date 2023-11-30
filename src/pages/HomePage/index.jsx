@@ -1,9 +1,12 @@
 import React from 'react';
+import CollectionContainer from '../../components/collectionContainer';
+import data from "../../components/mockApi"
 
 const HomePage = () => {
+
     return (
-        <div>
-            hi, I am HomePage
+        <div >
+            <CollectionContainer data={data} page={'tours'}>Коллекции туров</CollectionContainer>
         </div>
     );
 };
