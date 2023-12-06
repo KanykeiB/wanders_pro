@@ -1,34 +1,34 @@
-import React, {useState} from 'react';
-import dropdownStyle from './Dropdown.module.css'
-import PlusIcon from '../Icons/plusIcon'
+import React, { useEffect, useState } from 'react';
+import styles from './Dropdown.module.css'
+import PlusIcon from "../Icons/plusIcon";
 import MinusIcon from "../Icons/minusIcon";
 
-const Dropdown = ({question}) => {
-
-    const [dropdownState, setDropdownState] = useState(false);
-
-    const handleDropdownClick = () => {
-        setDropdownState(!dropdownState);
-    };
-
+const DropDown = ({ title, children, isAllVisible, pictures}) => {
+    const [visibleText, setVisibleText] = useState(false)
+    const handleShowTextButton = () => {
+        setVisibleText(!visibleText)
+    }
+    useEffect(() => {
+        setVisibleText(!isAllVisible)
+    }, [isAllVisible])
     return (
-        <div className={dropdownStyle.dropdown}>
-            <button onClick={handleDropdownClick} className={dropdownStyle.question}>
-                {question} {dropdownState ? <MinusIcon/> : <PlusIcon/>}
-            </button>
-            <div
-                className={`${dropdownStyle.dropdown_items} ${
-                    dropdownState ? dropdownStyle.isVisible : dropdownStyle.isHidden
-                }`}
-            >
-                <div className={dropdownStyle.dropdown_item}>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet et labore quidem sequi
-                        temporibus. Assumenda earum est et fugiat nihil, odit omnis optio quasi ratione rem
-                        sapiente sit voluptate voluptates?</p>
+        <div>
+            <div className={styles.dropdownContainer}>
+                <div className={styles.dropdownTextButton} >
+                    <p>{title}</p>
+                    <p onClick={handleShowTextButton} className={visibleText ? styles.hiddenText : styles.dropdownTextIcon}><MinusIcon/></p>
+                    <p onClick={handleShowTextButton} className={visibleText ? styles.dropdownTextIcon : styles.hiddenText}><PlusIcon/></p>
+                </div>
+                <div onClick={handleShowTextButton} className={visibleText ? styles.hiddenText : styles.dropdownText}>
+                    <p className={styles.child}>{children}</p>
+                    <div className={styles.picturesDown}>
+                        {pictures}
+                    </div>
                 </div>
             </div>
         </div>
-
     );
 }
-export default Dropdown;
+
+
+export default DropDown;

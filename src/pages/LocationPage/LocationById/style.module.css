@@ -1,0 +1,127 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+}
+.locationByIdContainer{
+    width: 1180px;
+    margin: 0 auto;
+}
+
+.locationTitle{
+    font-size: 60px;
+    font-weight: 700;
+}
+.locationState{
+    font-size: 20px;
+    color: #6E6E6E;
+}
+.cardWDescSection{
+    display: flex;
+}
+.descPart{
+    width: 30%;
+}
+.showMoreButton{
+    position: absolute;
+    padding: 18px 35px;
+    border-radius: 20px;
+    background: #FFF;
+    bottom:5%;
+    right:2%;
+}
+.modalWindow{
+    margin: 200px auto;
+    width: 1200px;
+    height: 800px;
+    background-color: transparent;
+}
+
+.mySwiperSlide img {
+    display: block;
+    width: 85%;
+    margin: 0 auto;
+    height: 100%;
+    object-fit: cover;
+  }
+.description{
+    font-size: 40px;
+    font-weight: 700;
+}
+.place{
+    font-size: 30px;
+    font-weight: 700;
+}
+.readMoreButton{
+    border: none;
+    background-color: transparent;
+    color: #0FA958;
+}
+.transportButton{
+    padding: 10px 30px;
+    border-radius: 50px;
+    background: transparent;
+    color: #0FA958;
+    font-size: 18px;
+    border: 1px solid #0FA958;
+    margin-right: 10px;
+}
+.smallerText{
+    font-weight: 700;
+}
+.mainText{
+    text-align: justify;
+}
+
+.lPicPart{
+    width: 65%;
+}
+
+.coordiatesTitle{
+    font-size: 27px;
+    font-weight: 700;   
+}
+.locationTypes{
+    padding: 4px 20px;
+    border-radius: 50px;
+    border: 1px solid #282828;
+    background-color: transparent;
+    margin: 5px 5px;
+    font-size: 16px;
+}
+
+.imgWrap{
+    display: flex;
+    justify-content:space-around;
+    position:relative;
+}
+.imgItem1{
+    width: 366px;
+    height: 460px;
+}
+.imgItem1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 30px 0px 0px 30px;
+}
+.imgItem2{
+    width: 365px;
+    height: 460px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+}
+.imgItem2 img:first-child{
+    width: 100%;
+    height: 49%;
+    object-fit: cover;
+    border-radius: 0px 30px 0px 0px;
+}
+.imgItem2 img:nth-child(2){
+    width: 100%;
+    height: 49%;
+    object-fit: cover;
+    border-radius: 0px 0px 30px 0px;
+}
+

@@ -4,18 +4,21 @@
 
 }
 .dropdownContainer{
-    width: 493px;
-    background-color: #F0EFEF;
-    border-radius: 30px;
-    padding: 25px;
-
+    width: 770px;
+    border-style: solid;
+    border-width: 1px 0;
+    border-color: #000;
 }
 
 .hiddenText{
     display: none;
 }
+.dropdownText{
+    align-content: justify;
+}
 .picturesDown{
-
+    width: 770px;
+    height:170px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -25,13 +28,4 @@
     width: 248px;
     height: 162px;
     border-radius: 30px;
-}
-
-.dropdownTextButton p{
-    font-size: 20px;
-}
-
-.child{
-    font-size: 20px;
-    padding-top: 25px;
 }

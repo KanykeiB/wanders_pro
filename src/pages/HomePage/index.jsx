@@ -1,11 +1,19 @@
 import React from 'react';
-import Questions from "../../components/Dropdown-Questions/Questions/Questions";
-import Contacts from "../../components/Contacts/Contacts";
+import CollectionContainer from '../../components/collectionContainer';
+import data from "../../components/mockApi"
+
+
+
 
 const HomePage = () => {
+
     return (
-        <div>
-            hi, I am HomePage
+        <div >
+            <CollectionContainer 
+            data={data} 
+            page={'tours'}
+            length={''}>Коллекции туров</CollectionContainer>
+
         </div>
     );
 };

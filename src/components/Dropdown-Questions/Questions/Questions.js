@@ -3,6 +3,7 @@ import Dropdown from "../Dropdown";
 import style from './style.module.css'
 import emoji1 from '../../assests/image 576.png'
 import emoji2 from '../../assests/image 577.png'
+import DropdownText from "../../dropdownText";
 
 
 const Questions = () => {
@@ -16,14 +17,16 @@ const Questions = () => {
             </div>
             <div className={style.dropdownWrapper}>
                 <div className={style.dropdownCol}>
-                    <Dropdown question={'Как забронировать тур?'}/>
-                    <Dropdown question={'Как начать работать с Wanders?'}/>
-                    <Dropdown question={'Где я могу почитать о локациях?'}/>
+
+                    <Dropdown title={'Как забронировать тур?'} children={'i dont  know how'}/>
+                    <Dropdown title={'Как начать работать с Wanders?'} children={'i dont  know how'}/>
+                    <Dropdown title={'Где я могу почитать о локациях?'} children={'i dont  know'}/>
+
                 </div>
                 <div className={style.dropdownCol}>
-                    <Dropdown question={'Какой должен быть опыт организации?'}/>
-                    <Dropdown question={'Как зарегистрироваться?'}/>
-                    <Dropdown question={'Какие требования к авторам туров?'}/>
+                    <Dropdown title={'Какой должен быть опыт организации?'} children={'i dont  know'}/>
+                    <Dropdown title={'Как зарегистрироваться?'} children={'i dont  know'}/>
+                    <Dropdown title={'Какие требования к авторам туров?'} children={'i dont  know'}/>
                 </div>
             </div>
         </div>
