@@ -6,7 +6,10 @@ const HomePage = () => {
 
     return (
         <div >
-            <CollectionContainer data={data} page={'tours'}>Коллекции туров</CollectionContainer>
+            <CollectionContainer 
+            data={data} 
+            page={'tours'}
+            length={''}>Коллекции туров</CollectionContainer>
         </div>
     );
 };

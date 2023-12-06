@@ -1,14 +1,34 @@
-import React from 'react';
-import { useParams } from 'react-router-dom';
+
+import React, {useEffect} from 'react';
+import {useDispatch, useSelector} from "react-redux";
+import {tours} from '../../redux/selectors/selectors'
+import {getTourList} from "../../redux/actions/tourActions";
+import TourCard from "../../components/tourCard";
+import {Box} from "@mui/material";
 
 const ToursPage = () => {
-    const {category} = useParams()
+
+    const dispatch = useDispatch()
+    const data = useSelector(tours)
+
+    useEffect(() => {
+        dispatch(getTourList())
+    }, [dispatch])
+
     return (
-        <div>
-            hi, I am ToursPage
-            <p>test: {category}</p>
-        </div>
+        <Box className={'container'}>
+            <Box className={'row'}>
+                {
+                    data?.map(tour => (
+                        <Box className={'col-3'} sx={{marginBottom: '20px'}}>
+                            <TourCard tour={tour}/>
+                        </Box>
+                    ))
+                }
+            </Box>
+        </Box>
     );
 };
+
 
 export default ToursPage;

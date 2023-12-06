@@ -1,7 +1,8 @@
 import { Route, Switch } from 'react-router-dom';
 import HomePage from './pages/HomePage';
-import LocationPage from './pages/LocationPage';
+import LocationPage from './pages/LocationPage/MainPage';
 import ToursPage from './pages/ToursPage';
+import LocationPageById from './pages/LocationPage/LocationById';
 
 
 
@@ -12,6 +13,7 @@ function App() {
         <Switch>
           <Route exact path='/' component={HomePage} />
           <Route exact path='/locations/' component={LocationPage} />
+          <Route exact path='/locations/:locationSpec' component ={LocationPageById}/>
           <Route exact path='/tours/:category' component={ToursPage} />
         </Switch>
       </header>
