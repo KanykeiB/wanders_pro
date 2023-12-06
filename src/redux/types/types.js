@@ -1,5 +1,7 @@
 const GET_TOURS_LIST = 'GET_TOURS_LIST'
+const GET_TOUR_BY_ID = 'GET_TOUR_BY_ID'
 
 export {
     GET_TOURS_LIST,
+    GET_TOUR_BY_ID,
 }
