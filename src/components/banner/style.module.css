@@ -1,0 +1,76 @@
+
+.banner {
+    width: 1120px;
+    position: relative;
+}
+
+.banner_img {
+    overflow: hidden;
+}
+
+.banner_img img{
+    width: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+    height: 311px;
+}
+
+.title {
+    color: #FFF;
+    font-family: Gilroy;
+    font-size: 60px !important;
+    font-style: normal !important;
+    font-weight: 800 !important;
+    line-height: normal !important;
+    margin: 0 !important;
+}
+
+.filters {
+    position: absolute;
+    top: 70px;
+    left: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.filter_selectors {
+    display: flex;
+    align-items: center;
+}
+
+.filter_select {
+    border-radius: 10px !important;
+    border: none !important;
+    background: #fff;
+}
+
+.filter_select fieldset {
+    border-color: transparent !important;
+    border: none;
+}
+
+
+.all_filters_btn {
+    display: flex;
+    align-items: center;
+    gap: 10px !important;
+    padding: 15px 13px !important;
+    border-radius: 10px !important;
+    background-color: #FFF !important;
+    color: #000 !important;
+    margin: 8px !important;
+}
+
+.show_more_btn {
+    color: #fff !important;
+    padding: 20px 13px !important;
+    font-family: Averta Demo PE;
+    /*font-size: 20px !important;*/
+    font-style: normal !important;
+    font-weight: 400 !important;
+    line-height: normal !important;
+    border-radius: 10px !important;
+    background: #0FA958 !important;
+    margin-left: 23px !important;
+}

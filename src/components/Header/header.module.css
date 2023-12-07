@@ -1,0 +1,24 @@
+.header {
+    display: flex;
+    align-items: center;
+}
+
+.header_right_side {
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+    gap: 30px;
+}
+
+.header_inside {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 5px !important;
+    text-transform: none !important;
+    color: #000000 !important;
+    font-size: 18px !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    line-height: normal !important;
+}
