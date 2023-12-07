@@ -45,6 +45,19 @@
     grid-column: span 1;
     grid-row: span 1;
 }
+.tagsWrap{
+    display: flex;
+    width: 765px;
+    justify-content: space-between;
+}
+.tags{
+font-size: 20px;
+font-weight: 700;
+}
+.tagsSmall{
+font-size: 16px;
+font-weight: 300;
+}
 .showMoreButton{
     position: absolute;
     padding: 15px 30px;

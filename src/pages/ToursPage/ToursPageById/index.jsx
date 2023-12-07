@@ -1,28 +1,44 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect} from 'react';
+import {useDispatch, useSelector} from "react-redux";
 import styles from './style.module.css'
+import tourDataOperations from '../../../redux/thunk/thunk'
 import mockApiDataTour from '../../../components/mockApi/mockapiTourById';
 import DropDownText from '../../../components/dropdownText';
 import { Modal } from '@mui/material';
 import SwiperCustom from '../../../components/swiperCustom';
 import { SwiperSlide } from 'swiper/react';
+import {tourById} from '../../../redux/selectors/selectors'
+import o from '../../../components/assests/dotGreen.svg'
 
+//Dictionary
+const languageChoice = {'Russian': 'Русский', 'English':'Английский','Kyrgyz':'Кыргызский'}
+const difficultyLevel = {'Base':'Базовый *','Medium':'Средний **', 'Advanced': 'Продвинутый *****'}
+const comfortLevel = {'Base':'Базовый *','Simple':'Простой **','Medium':'Средний ***', 'Above_average': 'Выше Среднего ****', 'High':'Высокий *****'}
 const TourPageById = () => {
+    const dispatch = useDispatch()
+    const {getTourById} = tourDataOperations;
     const [visibleImages, setVisibleImages] = useState(5)
     const [showAll, setShowAll] = useState(true)
     const [open, setOpen] = useState(false);
+    const data = useSelector(tourById)
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);
     const handleShowAll = () => {
         setShowAll(!showAll)
     }
+    useEffect(()=>{
+        dispatch(tourDataOperations.getTourById('1-eto-nazvanie-tura'))
+
+    }, [])
+    // console.log(data, 'data from')
 
     return (
         <div className={styles.tourPageContainer}>
             {mockApiDataTour.map(el => (
                 <>
                     <div>
-                        <p className={styles.sectionName}>{el.name}</p>
-                        <p>{el.rating ? el.rating : "Новый"} &#183; {el.state} &#183; {el.programs.length} дня</p>
+                        <p className={styles.sectionName}>{data.title}</p>
+                        <p>{el.rating ? el.rating : "Новый"} &#183; {el.state} &#183; {data.amount_of_days} дня</p>
                     </div>
                     <div className={styles.picturesSectionWrap}>
                         <img src={el.images[0]} className={styles.gridLarge} alt="" />
@@ -48,6 +64,24 @@ const TourPageById = () => {
                                 </SwiperCustom>
                             </div>
                         </Modal>
+                    <div className={styles.tagsWrap}>
+                        <div>
+                            <p className={styles.tags}>Сложность</p>
+                            <p className={styles.tagsSmall}>{difficultyLevel[data.difficulty_level]} </p>
+                        </div>
+                        <div>
+                            <p className={styles.tags}>Комфорт</p>
+                            <p className={styles.tagsSmall}>{comfortLevel[data.comfort_level]}</p>
+                        </div>
+                        <div>
+                            <p className={styles.tags}>Группа</p>
+                            <p className={styles.tagsSmall}>До {data.max_people} туристов</p>
+                        </div>
+                        <div>
+                            <p className={styles.tags}>Возраст</p>
+                            <p className={styles.tagsSmall}>от {data.min_age} лет</p>
+                        </div>
+                    </div>
                     <div className={styles.dropDownTitleWrap}>
                         <p className={styles.sectionName}>Программа</p>
                         <button className={styles.showAllButton} onClick={handleShowAll}>Раскрыть все</button>
