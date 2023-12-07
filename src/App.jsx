@@ -1,7 +1,7 @@
 import { Route, Switch } from 'react-router-dom';
 import HomePage from './pages/HomePage';
 import LocationPage from './pages/LocationPage/MainPage';
-import LocationPageById from './pages/LocationPage/LocationById/MainPage';
+// import LocationPageById from './pages/LocationPage/LocationById/MainPage';
 import ToursPage from './pages/ToursPage/MainPage';
 import TourPageById from './pages/ToursPage/ToursPageById';
 import DropDownText from './components/dropdownText';
