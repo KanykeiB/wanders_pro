@@ -1,0 +1,37 @@
+.dropdownTextButton{
+    display: flex;
+    justify-content: space-between;
+
+}
+.dropdownContainer{
+    width: 493px;
+    background-color: #F0EFEF;
+    border-radius: 30px;
+    padding: 25px;
+
+}
+
+.hiddenText{
+    display: none;
+}
+.picturesDown{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 25px 0;
+}
+.picturesDown img{
+    width: 248px;
+    height: 162px;
+    border-radius: 30px;
+}
+
+.dropdownTextButton p{
+    font-size: 20px;
+}
+
+.child{
+    font-size: 20px;
+    padding-top: 25px;
+}

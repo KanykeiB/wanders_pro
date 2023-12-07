@@ -4,6 +4,7 @@ import data from "../../components/mockApi"
 
 const HomePage = () => {
 
+
     return (
         <div >
             <CollectionContainer 
