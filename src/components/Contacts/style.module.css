@@ -1,0 +1,87 @@
+.Bg{
+    background-color: #F7F7F7;
+    border-radius: 50px;
+    max-width: 1020px;
+    min-height: 510px;
+    padding: 81px 142px 108px 63px;
+    margin: 100px auto;
+
+}
+
+.infoWrap{
+    display: flex;
+    gap: 70px;
+}
+
+.SignUp{
+    background-color: #FEFFCD;
+    max-width: 365px;
+    max-height: 321px;
+    border-radius: 30px;
+    padding: 35px;
+    position: relative;
+}
+
+.SignUp p{
+    font-size: 25px;
+    color: #282828;
+    line-height: 30.9px;
+    text-align: center;
+    margin-bottom: 61px;
+}
+
+.mountain{
+    position: absolute;
+    top: 63px;
+    left: -63px;
+}
+
+.bag{
+    position: absolute;
+    right: -29px;
+    top: -58px;
+}
+
+.arrow{
+    position: absolute;
+    bottom: 106px;
+    right: 118px;
+}
+.tapHere{
+    font-size: 16px;
+    color: #FE7A00;
+    transform: rotate(-0.02turn);
+    position: absolute;
+    right: 32px;
+    bottom: 135px;
+}
+
+.contacts{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.contacts h3{
+    font-size: 40px;
+}
+.contacts p{
+    font-size: 16px;
+    opacity: 70%;
+}
+
+.contacts h5{
+    font-size: 25px;
+}
+
+.greenBtn{
+    padding: 15px 35.5px;
+    background-color: #0FA958;
+    font-size: 20px;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    min-width: 307px;
+    cursor: pointer;
+    margin-top: 74px ;
+}
