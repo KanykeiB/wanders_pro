@@ -1,1 +1,5 @@
-//types
+const GET_TOURS_LIST = 'GET_TOURS_LIST'
+
+export {
+    GET_TOURS_LIST,
+}

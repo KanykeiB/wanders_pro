@@ -2,10 +2,8 @@ import React from 'react';
 import CollectionContainer from '../../components/collectionContainer';
 import data from "../../components/mockApi"
 
-
-
-
 const HomePage = () => {
+
 
     return (
         <div >
@@ -13,7 +11,6 @@ const HomePage = () => {
             data={data} 
             page={'tours'}
             length={''}>Коллекции туров</CollectionContainer>
-
         </div>
     );
 };
