@@ -1,0 +1,69 @@
+.TitleWrap {
+    margin-bottom: 40px;
+    margin-top: 133px;
+}
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.col4 {
+    width: 33.33%;
+    padding: 10px;
+}
+
+.CommImg {
+    position: absolute;
+    top: -270px;
+    right: 80px;
+}
+
+.fact{
+    font-size: 40px;
+    color: #FE7A00;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+.col4A {
+    position: absolute;
+    top: 290px;
+    left: 393px;
+}
+
+.col4B {
+    position: absolute;
+    right: 0;
+    top: 320px;
+}
+
+.box {
+    border: 3px solid #0FA958;
+    border-radius: 30px;
+    padding: 25px;
+}
+
+.UserWrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 15px;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.userWrapImg {
+    width: 40px;
+    border-radius: 50%;
+}
+
+.UserName {
+    font-size: 20px;
+}

@@ -32,8 +32,8 @@
 
 .mountain{
     position: absolute;
-    top: 63px;
-    left: -63px;
+    top: 78px;
+    left: -130px;
 }
 
 .bag{
@@ -59,11 +59,13 @@
 .contacts{
     display: flex;
     flex-direction: column;
+    gap: 30px;
 
 }
 
 .contacts h3{
-    font-size: 40px;
+    font-size: 34px;
+    font-weight: 700;
 }
 .contacts p{
     font-size: 16px;
@@ -72,6 +74,7 @@
 
 .contacts h5{
     font-size: 25px;
+    font-weight: 700;
 }
 
 .greenBtn{
@@ -83,5 +86,5 @@
     color: white;
     min-width: 307px;
     cursor: pointer;
-    margin-top: 74px ;
+    margin-top: 12px ;
 }

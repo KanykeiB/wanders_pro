@@ -7,6 +7,7 @@ import TourPageById from './pages/ToursPage/ToursPageById';
 import DropDownText from './components/dropdownText';
 import LocationPageById from './pages/LocationPage/LocationById';
 import TourPage from "./pages/TourPage";
+import ForTourAuthorPage from "./pages/ForTourAuthorPage";
 
 
 
@@ -21,6 +22,8 @@ function App() {
           <Route exact path='/tours/:category' component={ToursPage} />
           <Route exact path='/tour/:id' component={TourPage} />
           <Route exact path='/test' component={TourPageById}/>
+          <Route exact path='/tour-author' component={ForTourAuthorPage}/>
+
         </Switch>
       </header>
     </div>
