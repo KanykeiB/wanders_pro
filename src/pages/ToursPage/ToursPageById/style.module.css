@@ -49,7 +49,9 @@
     display: flex;
     width: 765px;
     justify-content: space-between;
+    margin: 50px 0px;
 }
+
 .tags{
 font-size: 20px;
 font-weight: 700;
@@ -78,4 +80,13 @@ font-weight: 300;
     margin: 0 auto;
     height: 100%;
     object-fit: cover;
+  }
+  .containerInner{
+    position: relative;
+  }
+  .containerBooking{
+    position: absolute;
+    top: 0%;
+    right:0%;
+    /* display: inline; */
   }

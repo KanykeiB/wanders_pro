@@ -1,0 +1,120 @@
+.bookingBoxWrap{
+    width: 390px;
+    border-radius: 25px;
+    border: 1px solid #D9D9D9;
+    background: #FFF;
+    padding:30px;
+}
+.datePick{
+    border-radius: 100%;
+}
+.priceTag{
+    font-size: 30px;
+    font-weight: 700;
+}
+.selectText{
+    padding: 20px;
+    margin: 50px;
+}
+.counterButtonsWrap{
+    margin: 8px 0px;
+    width: 331px;
+    border-radius: 25px;
+    border: 1px solid #D0D0D0;
+    display: flex;
+    justify-content: space-around;
+    padding: 15px 0px 15px 15px;
+}
+.counterButtonsTextMain{
+    font-size: 20px;
+    font-weight: 300;
+}
+.counterButtonsTextSmall{
+    color: #737373;
+    font-size: 12px;
+    font-weight: 300;
+}
+.counterButtons{
+    padding: 10px 15px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    border: none;
+}
+.counterValue{
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0 15px;
+}
+.remainingPlace{
+    color: #0FA958;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+}
+.bookButton{
+    padding: 25px 88px;
+    border-radius: 25px;
+    background:  #0FA958;
+    font-size: 20px;
+    font-weight: 600;
+    color:white;
+    border: none;
+    margin: 15px 0px;
+}
+.bookText{
+    font-size: 14px;
+    font-weight: 300;
+    text-align: center;
+}
+.fromContainer{
+    width: 587px;
+    margin: 200px auto;
+    border-radius: 30px;
+    background: #FFF;   
+    padding: 40px 40px;
+}
+
+.title{
+    font-size: 28px;
+    font-weight: 700;
+    text-align: center;
+}
+.closeButtonWrap{
+    text-align: right;
+}
+.closeButton{
+    background-color: transparent;
+    border: none;
+}
+.helperText{
+    opacity: 0.6;
+    text-align: center;
+    margin: 20px 0px;
+}
+.textField{
+    margin: 10px;
+}
+.countrySelectWrap{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0px;
+}
+.termsAndConditions{
+    font-size: 12px;
+}
+.termsAndConditions a{
+    font-size: 12px;
+    color: color;
+}
+.termsAndConditionsBox{
+   width: 18px;
+    height: 18px;
+    margin-right: 20px;
+}
+.termsAndConditionsWrap{
+    display: flex;
+    justify-content: space-between;
+}
+.submitButton{
+    text-align: center;
+}
