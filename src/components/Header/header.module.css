@@ -1,6 +1,8 @@
 .header {
     display: flex;
     align-items: center;
+    padding-top: 25px;
+    padding-bottom: 40px;
 }
 
 .header_right_side {

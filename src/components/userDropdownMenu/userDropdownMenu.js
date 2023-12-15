@@ -12,8 +12,9 @@ import {
     Typography
 } from "@mui/material";
 import {Logout, PersonAdd, Settings} from "@mui/icons-material";
-import DropdownIcon from "../icons/dropdownIcon";
+// import DropdownIcon from "../icons/dropdownIcon";
 import userImg from "../assests/b5b8f4bd33b3ec4e7b8c6febdbe61a78.png";
+import DropdownIcon from "../Icons/dropdownIcon";
 
 const UserDropdownMenu = () => {
 
