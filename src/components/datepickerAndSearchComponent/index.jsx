@@ -1,8 +1,8 @@
 import React, {useState} from 'react';
 import {Box, Button} from "@mui/material";
 import Datepicker from "./DatePicker/Datepicker";
-import DatepickerIcon from "../icons/datepickerIcon";
-import SearchIcon from "../icons/searchIcon";
+import DatepickerIcon from "../Icons/datepickerIcon";
+import SearchIcon from "../Icons/searchIcon";
 import dateSearchStyle from './style.module.css';
 import {useForm} from "react-hook-form";
 

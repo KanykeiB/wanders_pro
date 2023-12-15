@@ -3,6 +3,10 @@
     max-width: 260px;
     margin: 0 auto;
     background: #FBFBFB;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    padding-top: 40px;
 }
 
 .logo {

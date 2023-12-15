@@ -3,9 +3,9 @@ import logo from '../assests/NordVPN.png'
 import {Box, Button, Typography} from "@mui/material";
 import sidebarStyle from './sidebar.module.css';
 import {NavLink} from "react-router-dom";
-import HomeIcon from "../icons/HomeIcon";
-import ToursIcon from "../icons/ToursIcon";
-import LocationsIcon from "../icons/LocationsIcon";
+import HomeIcon from "../Icons/HomeIcon";
+import ToursIcon from "../Icons/ToursIcon";
+import LocationsIcon from "../Icons/LocationsIcon";
 
 const Sidebar = () => {
 
@@ -65,19 +65,19 @@ const sidebarNavigation = [
         icon: <HomeIcon/>,
     },
     {
-        navigateTo: '/tours',
+        navigateTo: '/tours/:category',
         title: 'Туры',
         icon: <ToursIcon/>,
     },
     {
-        navigateTo: '/locations',
+        navigateTo: '/locations//',
         title: 'Локации',
         icon: <LocationsIcon/>,
     },
-    {
-        navigateTo: '/locations',
-        title: 'локэтион',
-        icon: <LocationsIcon/>,
-    },
+    // {
+    //     navigateTo: '/locations',
+    //     title: 'локэтион',
+    //     icon: <LocationsIcon/>,
+    // },
 
 ]
