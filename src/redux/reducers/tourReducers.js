@@ -1,11 +1,12 @@
 import { GET_TOURS_LIST, GET_TOURS_BY_ID } from "../types/types";
 
 const initialState = {
-  tours: [],
-  error: null,
-  loading: false,
-  data: {},
-};
+    tours: [],
+    error: null,
+    loading: false,
+    data: {},
+    tour_retrieve: [],
+}
 
 const tourReducers = (state = initialState, action) => {
   switch (action.type) {

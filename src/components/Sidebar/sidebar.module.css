@@ -1,0 +1,173 @@
+
+.sidebar {
+    max-width: 260px;
+    margin: 0 auto;
+    background: #FBFBFB;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    padding-top: 40px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.logo_img img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+.logo_title {
+    color: #000 !important;
+    font-family: Arial !important;
+    font-size: 29px !important;
+    font-style: normal !important;
+    font-weight: 700 !important;
+    line-height: normal !important;
+}
+
+.sidebar_menu {
+    margin-top: 55px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgba(217, 217, 217, 0.40);
+    opacity: 0.8;
+
+}
+
+.sidebar_menu_title {
+    color: #000 !important;
+    font-size: 20px !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    line-height: normal !important;
+}
+
+
+.btn_icons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    background-color: transparent;
+    border: none;
+    color: #9A9A9A;
+    cursor: pointer;
+    padding: 10px 15px;
+    text-decoration: none;
+    margin: 5px 10px;
+}
+
+.btn_icons:hover{
+    background: rgba(217, 217, 217, 0.40);
+    border-radius: 15px;
+    color: #000000;
+    fill: #000000;
+}
+
+.active{
+    border-radius: 15px;
+    color: #000000;
+    fill: #000000;
+    background: rgba(217, 217, 217, 0.40);
+}
+
+.about_project {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 0 30px 30px;
+    opacity: 0.8;
+    border-bottom: 1px solid rgba(217, 217, 217, 0.40);
+}
+
+.travel_writers {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 0 30px 30px;
+}
+
+.sidebar_title {
+    color: #6E6E6E;
+    font-size: 18px !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    line-height: normal !important;
+    margin-bottom: 18px !important;
+}
+
+.sidebar_desc {
+    color: #282828 !important;
+    font-size: 16px !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    line-height: normal !important;
+}
+
+.about_project_links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.about_project_links a {
+    color: #282828 !important;
+    font-size: 16px !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    line-height: normal !important;
+}
+
+.learn_more_btn {
+    padding: 13px 24px !important;
+    border-radius: 15px !important;
+    background: #282828 !important;
+    color: #FFF !important;
+    font-size: 16px !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    line-height: normal !important;
+    text-transform: none !important;
+    margin-top: 25px !important;
+    margin-right: 30px !important;
+}
+
+.eco_tour_out {
+    padding-bottom: 30px;
+    opacity: 0.8;
+    border-bottom: 1px solid rgba(217, 217, 217, 0.40);
+}
+
+.eco_tour {
+    margin: 15px 21px 0 25px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    background: #4BCA87;
+    padding: 15px 8px 12px 7px;
+}
+
+.eco_tour span {
+    color: #FFF;
+    font-size: 73px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 85%;
+    text-transform: uppercase;
+}
+
+.eco_tour_btn {
+    padding: 13px 24px !important;
+    margin-top: 27px !important;
+    border-radius: 15px !important;
+    background: #FFF !important;
+    text-transform: none !important;
+    color: #0FA958 !important;
+    font-size: 18px !important;
+    font-style: normal !important;
+    font-weight: 700 !important;
+    line-height: 85% !important;
+}

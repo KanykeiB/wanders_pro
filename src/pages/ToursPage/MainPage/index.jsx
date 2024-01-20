@@ -4,6 +4,7 @@ import {tours} from '../../../redux/selectors/selectors'
 import {getTourList} from "../../../redux/actions/tourActions";
 import TourCard from "../../../components/tourCard";
 import {Box} from "@mui/material";
+import Layout from "../../../components/layout_for_SideBarAndHeader";
 
 const ToursPage = () => {
 
@@ -15,17 +16,19 @@ const ToursPage = () => {
     }, [dispatch])
 
     return (
-        <Box className={'container'}>
-            <Box className={'row'}>
-                {
-                    data?.map(tour => (
-                        <Box className={'col-3'} sx={{marginBottom: '20px'}}>
-                            <TourCard tour={tour}/>
-                        </Box>
-                    ))
-                }
+        <Layout>
+            <Box className={'container'}>
+                <Box className={'row'}>
+                    {
+                        data?.map(tour => (
+                            <Box className={'col-3'} sx={{marginBottom: '20px'}}>
+                                <TourCard tour={tour}/>
+                            </Box>
+                        ))
+                    }
+                </Box>
             </Box>
-        </Box>
+        </Layout>
     );
 };
 

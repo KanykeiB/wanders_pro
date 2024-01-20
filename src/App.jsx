@@ -1,10 +1,12 @@
 import { Route, Switch } from 'react-router-dom';
 import HomePage from './pages/HomePage';
 import LocationPage from './pages/LocationPage/MainPage';
-import LocationPageById from './pages/LocationPage/LocationById';
+// import LocationPageById from './pages/LocationPage/LocationById';
 import ToursPage from './pages/ToursPage/MainPage';
 import TourPageById from './pages/ToursPage/ToursPageById';
 import DropDownText from './components/dropdownText';
+import LocationPageById from './pages/LocationPage/LocationById';
+import TourPage from "./pages/TourPage";
 import AboutUs from './pages/AboutUs';
 
 function App() {
@@ -16,6 +18,7 @@ function App() {
           <Route exact path='/locations/' component={LocationPage} />
           <Route exact path='/locations/:locationSpec' component ={LocationPageById}/>
           <Route exact path='/tours/:category' component={ToursPage} />
+          <Route exact path='/tour/:id' component={TourPage} />
           <Route exact path='/test' component={TourPageById}/>
           <Route exact path='/aboutUs' component={AboutUs}/>
         </Switch>

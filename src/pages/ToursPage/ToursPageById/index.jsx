@@ -9,6 +9,7 @@ import SwiperCustom from '../../../components/swiperCustom';
 import { SwiperSlide } from 'swiper/react';
 import { loading, tourById } from '../../../redux/selectors/selectors'
 import BookingCard from '../../../components/bookingCard';
+import Layout from "../../../components/layout_for_SideBarAndHeader";
 
 //Dictionary
 const languageChoice = { 'Russian': 'Русский', 'English': 'Английский', 'Kyrgyz': 'Кыргызский' }
@@ -40,24 +41,25 @@ const TourPageById = () => {
         )
     } else if (data && Object.keys(data).length > 0) {
         return (
+            <Layout>
             <div className={styles.tourPageContainer}>
-                {mockApiDataTour.map(el => (
-                    <>
-                        <div>
-                            <p className={styles.sectionName}>{data.title}</p>
-                            <p>{el.rating ? el.rating : "Новый"} &#183; {el.state} &#183; {data.amount_of_days} дня</p>
-                        </div>
-                        <div className={styles.picturesSectionWrap}>
-                            <img src={el.images[0]} className={styles.gridLarge} alt="" />
-                            <img src={el.images[1]} className={styles.gridSmall} alt="" />
-                            <img src={el.images[2]} className={styles.gridSmall} alt="" />
-                            <img src={el.images[3]} className={styles.gridSmall} alt="" />
-                            <img src={el.images[4]} className={styles.gridSmall} alt="" />
-                            {el.images.length > visibleImages && <button
-                                className={styles.showMoreButton}
-                                onClick={handleOpen}>Показать еще фото</button>}
-                        </div>
-                        <Modal
+                    {mockApiDataTour.map(el => (
+                        <>
+                            <div>
+                                <p className={styles.sectionName}>{data.title}</p>
+                                <p>{el.rating ? el.rating : "Новый"} &#183; {el.state} &#183; {data.amount_of_days} дня</p>
+                            </div>
+                            <div className={styles.picturesSectionWrap}>
+                                <img src={el.images[0]} className={styles.gridLarge} alt="" />
+                                <img src={el.images[1]} className={styles.gridSmall} alt="" />
+                                <img src={el.images[2]} className={styles.gridSmall} alt="" />
+                                <img src={el.images[3]} className={styles.gridSmall} alt="" />
+                                <img src={el.images[4]} className={styles.gridSmall} alt="" />
+                                {el.images.length > visibleImages && <button
+                                    className={styles.showMoreButton}
+                                    onClick={handleOpen}>Показать еще фото</button>}
+                            </div>
+                            <Modal
                             open={open}
                             onClose={handleClose}
                         >
@@ -90,20 +92,20 @@ const TourPageById = () => {
                                     <p className={styles.tagsSmall}>от {data.min_age} лет</p>
                                 </div>
                             </div>
-                            <div className={styles.dropDownTitleWrap}>
-                                <p className={styles.sectionName}>Программа</p>
-                                <button className={styles.showAllButton} onClick={handleShowAll}>Раскрыть все</button>
-                            </div>
-                            {data && data.days ? (
+                                <div className={styles.dropDownTitleWrap}>
+                                    <p className={styles.sectionName}>Программа</p>
+                                    <button className={styles.showAllButton} onClick={handleShowAll}>Раскрыть все</button>
+                                </div>
+                                {data && data.days ? (
                                 data.days.map(item => (
-                                    <DropDownText
-                                        title={item.title}
-                                        isAllVisible={showAll}
-                                        pictures={item.days_images.length == 0 ? null : item.days_images.slice(0, 3).map(pic => (
-                                            <img src={pic} alt="" />
-                                        ))}
-                                    >
-                                        {item.description}</DropDownText>
+                                        <DropDownText
+                                            title={item.title}
+                                            isAllVisible={showAll}
+                                            pictures={item.days_images.length == 0 ? null : item.days_images.slice(0, 3).map(pic => (
+                                                <img src={pic} alt="" />
+                                            ))}
+                                        >
+                                            {item.description}</DropDownText>
                                 ))) : (
                                 <p>Loading...</p>)}
                             <div className={styles.dropDownTitleWrap}>
@@ -116,7 +118,7 @@ const TourPageById = () => {
                                     isAllVisible={showAll}
                                     pictures={item.place_images.length == 0 ? null : item.place_images.slice(0, 3).map(pic => (
                                         <img src={pic} alt="" />
-                                    ))}
+                                        ))}
                                 >
                                     {item.description}</DropDownText>
                             ))) : (
@@ -128,14 +130,15 @@ const TourPageById = () => {
                                 />
                             </div>
                         </div>
-                    </>
-                ))}
-            </div>
+                        </>
+                    ))}
+                </div>
+                </Layout>
         )
     } else {
         return (
             <>Not found</>
-        );
+    );
     }
 
 }
