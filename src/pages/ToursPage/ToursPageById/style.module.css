@@ -1,55 +1,55 @@
-.tourPageContainer{
-        width: 1280px;
-        margin: 0 auto;
+tourPageContainer{
+    width: 1280px;
+    margin: 0 auto;
 }
 .dropDownTitleWrap{
-    display: flex;
-    width: 770px;
-    justify-content: space-between;
+display: flex;
+width: 770px;
+justify-content: space-between;
 }
 .sectionName{
-    font-size: 36px;
-    font-weight: 700;
+font-size: 36px;
+font-weight: 700;
 }
 .showAllButton{
-    font-size: 16px;
-    background-color: transparent;
-    border: none;
+font-size: 16px;
+background-color: transparent;
+border: none;
 }
 .picturesSectionWrap{
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  gap: 10px;
-  position: relative;
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+grid-template-rows: repeat(2, 1fr);
+gap: 10px;
+position: relative;
 }
 .picturesSectionWrap img:first-child{
-    border-radius: 30px 0px 0px 30px;
+border-radius: 30px 0px 0px 30px;
 }
 .picturesSectionWrap img:nth-child(3){
-    border-radius: 0px 30px 0px 0px;
+border-radius: 0px 30px 0px 0px;
 }
 .picturesSectionWrap img:nth-child(5){
-    border-radius: 0px 0px 30px 0px;
+border-radius: 0px 0px 30px 0px;
 }
 .picturesSectionWrap img{
-  width: 100%;
-  height: 100%;
-  object-fit: cover; 
+width: 100%;
+height: 100%;
+object-fit: cover; 
 }
 .gridLarge{
-    grid-column: span 2;
-    grid-row: span 2;
+grid-column: span 2;
+grid-row: span 2;
 }
 .gridSmall{
-    grid-column: span 1;
-    grid-row: span 1;
+grid-column: span 1;
+grid-row: span 1;
 }
 .tagsWrap{
-    display: flex;
-    width: 765px;
-    justify-content: space-between;
-    margin: 50px 0px;
+display: flex;
+width: 765px;
+justify-content: space-between;
+margin: 50px 0px;
 }
 
 .tags{
@@ -61,32 +61,32 @@ font-size: 16px;
 font-weight: 300;
 }
 .showMoreButton{
-    position: absolute;
-    padding: 15px 30px;
-    border-radius: 20px;
-    background: #FFF;
-    bottom:1%;
-    right:1%;
+position: absolute;
+padding: 15px 30px;
+border-radius: 20px;
+background: #FFF;
+bottom:1%;
+right:1%;
 }
 .modalWindow{
-    margin: 200px auto;
-    width: 1200px;
-    height: 800px;
-    background-color: transparent;
+margin: 200px auto;
+width: 1200px;
+height: 800px;
+background-color: transparent;
 }
 .mySwiperSlide img {
-    display: block;
-    width: 85%;
-    margin: 0 auto;
-    height: 100%;
-    object-fit: cover;
-  }
-  .containerInner{
-    position: relative;
-  }
-  .containerBooking{
-    position: absolute;
-    top: 0%;
-    right:0%;
-    /* display: inline; */
-  }
+display: block;
+width: 85%;
+margin: 0 auto;
+height: 100%;
+object-fit: cover;
+}
+.containerInner{
+position: relative;
+}
+.containerBooking{
+position: absolute;
+top: 0%;
+right:0%;
+/* display: inline; */
+}
