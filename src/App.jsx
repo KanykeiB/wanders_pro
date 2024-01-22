@@ -21,8 +21,8 @@ function App() {
           <Route exact path='/locations/:locationSpec' component ={LocationPageById}/>
           <Route exact path='/tours/:category' component={ToursPage} />
           <Route exact path='/tour/:id' component={TourPage} />
-          <Route exact path='/test' component={TourPageById}/>
-          <Route exact path='/tour-author' component={ForTourAuthorPage}/>
+          <Route exact path='  ' component={TourPageById}/>
+          <Route exact path='/tourauthor' component={ForTourAuthorPage}/>
 
         </Switch>
       </header>

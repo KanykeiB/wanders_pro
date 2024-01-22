@@ -5,9 +5,9 @@ import AboutUs from "../../components/forTourAuthor/ABOUT-US";
 import Benefits from "../../components/forTourAuthor/BENEFITS";
 import ForWhom from "../../components/forTourAuthor/FOR-WHOM";
 import WorkProcess from "../../components/forTourAuthor/WORK-PROCESS";
-import Comments from "../../components/forTourAuthor/COMMENTS";
 import Questions from "../../components/Dropdown-Questions/Questions/Questions";
 import Contacts from "../../components/Contacts/Contacts";
+import AuthorsReviews from "../../components/forTourAuthor/REVIEWS";
 
 const ForTourAuthor = () => {
     return (
@@ -17,7 +17,7 @@ const ForTourAuthor = () => {
             <Benefits/>
             <ForWhom/>
             <WorkProcess/>
-            <Comments/>
+            <AuthorsReviews/>
             <Questions/>
             <Contacts/>
         </div>

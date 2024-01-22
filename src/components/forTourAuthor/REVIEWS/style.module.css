@@ -1,0 +1,69 @@
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+.col4 {
+    width: 33.33%;
+
+}
+
+.col12{
+    width: 100%;
+    padding: 10px;
+}
+p{
+    font-size: 14px;
+}
+.box {
+    border: 3px solid #0FA958;
+    border-radius: 30px;
+    padding: 25px;
+
+}
+.fact{
+    font-size: 40px;
+    padding: 30px;
+    border: 3px solid  #0FA958;
+    border-radius: 30px;
+    margin: 10px;
+
+}
+
+.fact h2{
+    font-size: 40px;
+    color: #FE7A00;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+.userWrapImg {
+    width: 40px;
+    border-radius: 50%;
+    padding: 0;
+}
+
+.UserName {
+    font-size: 20px;
+}
+.UserWrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 15px;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.TitleWrap {
+    margin-bottom: 40px;
+    margin-top: 133px;
+}
+.CommImg {
+    position: absolute;
+    top: -270px;
+   left: 850px;
+}
