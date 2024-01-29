@@ -1,0 +1,43 @@
+.guideBox{
+    width: 390px;
+    border-radius: 30px;
+    background:  rgba(15, 169, 88, 0.1);
+    padding: 16px 0px  25px 20px;
+    margin-top: 40px;
+}
+.guideWrap{
+    display: flex;
+    justify-content: space-around;
+}
+.guideButton{
+    padding: 15px 66px;
+    border-radius: 25px;
+    background:  #282828;
+    color:white;
+    margin-top: 10px;
+}
+.guideText{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.guideText p{
+    font-size: 16px;
+}
+.guideText div{
+    display: flex;
+}
+.guideText div img{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+.guideName h3{
+    font-size: 20px;
+    font-weight: 700;
+}
+.guideName img{
+    width: 58.3px;
+    height: 64.9px;
+    border-radius: 696.667px;
+}

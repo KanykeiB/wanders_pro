@@ -7,7 +7,6 @@
 .arrowLeft, .arrowRight{
     position: absolute;
     top:50%;
-    /* width: 200px; */
     background-color: gray;
     padding: 20px 20px;
     border-radius: 50%;
@@ -17,5 +16,30 @@
 .arrowRight{
     right:0%;
 }
-
+.customBullet {
+    display: inline-block;
+    width: 30px;
+    height: 4px;
+    background-color: #D9D8D8; 
+    margin: 0 8px; 
+    cursor: pointer;
+  }
+  .activeBullet {
+    background-color: #000; 
+  }
+  
+  .customPagination {
+    text-align: center;
+    margin-top: 10px; 
+  }
+  
+  @media screen and (max-width:500px) {
+    .mySwiper{
+        width:390px; 
+        height: 390px
+    }
+    .arrowLeft, .arrowRight{
+        display: none;
+    }
+}
 

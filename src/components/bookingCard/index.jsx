@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { styled } from '@mui/system';
 import * as yup from "yup"
 import styles from './style.module.css'
-import {  MenuItem, Modal, TextField } from '@mui/material';
+import { MenuItem, Modal, TextField } from '@mui/material';
 import { Controller, useForm } from "react-hook-form"
 import { yupResolver } from "@hookform/resolvers/yup"
 import "yup-phone-lite";
@@ -12,7 +12,7 @@ const schema = yup.object({
     date: yup.string().required(),
     name: yup.string().required(),
     lastname: yup.string().required(),
-    email : yup.string().required(),
+    email: yup.string().required(),
     number: yup.string().required(),
     agreeCheckbox: yup.boolean().required(),
 }).required();
@@ -87,7 +87,10 @@ const BookingCard = ({ price, availableDates, currency, touristMax, ageMin }) =>
                     label="Дата путешествия"
                     {...register('date')}
                 >
-                    <MenuItem value={availableDates}>{availableDates}</MenuItem>
+                    {availableDates.map(i => (
+                        <MenuItem value={i}>{i}</MenuItem>
+                    ))}
+
                 </SelectDate>
                 <div className={styles.counterButtonsWrap}>
                     <div>

@@ -3,7 +3,8 @@ import CollectionContainer from '../../../components/collectionContainer';
 import data from "../../../components/mockApi"
 import styles from './style.module.css'
 import Layout from "../../../components/layout_for_SideBarAndHeader";
-const LocationPage = () => {
+const 
+LocationPage = () => {
     return (
         <Layout>
             <div className={styles.locationContainer}>

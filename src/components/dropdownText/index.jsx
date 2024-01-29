@@ -15,7 +15,7 @@ const DropDownText = ({ title, children, isAllVisible, pictures }) => {
         <div>
             <div className={styles.dropdownContainer}>
                 <div className={styles.dropdownTextButton} >
-                    <p>{title}</p>
+                    <p className={styles.dropDownTitle}>{title}</p>
                     <p onClick={handleShowTextButton} className={visibleText ? styles.hiddenText : styles.dropdownTextIcon}><KeyboardArrowDownIcon /></p>
                     <p onClick={handleShowTextButton} className={visibleText ? styles.dropdownTextIcon : styles.hiddenText}><KeyboardArrowUpIcon /></p>
                 </div>
