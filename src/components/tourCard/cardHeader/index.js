@@ -6,7 +6,7 @@ import EcoIcon from "../../assests/ecoIcon";
 const TourCardHeader = ({tour}) => {
 
     const cardHeader = {
-        backgroundImage: `url(${tour.img})`,
+        backgroundImage: `url(${tour.tour_images[0]})`,
         height: '245px',
         backgroundPosition: 'center',
         backgroundSize: 'cover',
@@ -30,7 +30,7 @@ const TourCardHeader = ({tour}) => {
                         variant="contained"
                         sx={type_btn}
                     >
-                        {tour.tag}
+                        {tour.collection[0].collection}
                     </Button>
                     <FavoriteButton tour={tour}/>
                 </Box>
@@ -42,7 +42,7 @@ const TourCardHeader = ({tour}) => {
                     }}>
                         <img
                             src={tour.user_avatar}
-                            alt="user photo"
+                            // alt="user photo"
                             style={{
                                 borderRadius: '50%',
                                 width: '40px',
@@ -52,9 +52,9 @@ const TourCardHeader = ({tour}) => {
                         />
                         <Typography sx={card_title} variant={'h5'}>{tour.user}</Typography>
                     </Box>
-                    {
-                        tour.eco ? <EcoIcon/> : null
-                    }
+                    {/*{*/}
+                    {/*    tour.eco ? <EcoIcon/> : null*/}
+                    {/*}*/}
                 </Box>
             </Box>
         </Box>

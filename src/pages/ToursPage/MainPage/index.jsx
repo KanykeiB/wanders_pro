@@ -20,8 +20,8 @@ const ToursPage = () => {
             <Box className={'container'}>
                 <Box className={'row'}>
                     {
-                        data?.map(tour => (
-                            <Box className={'col-3'} sx={{marginBottom: '20px'}}>
+                        data?.map((tour, key) => (
+                            <Box key={key} className={'col-3'} sx={{marginBottom: '20px'}}>
                                 <TourCard tour={tour}/>
                             </Box>
                         ))
