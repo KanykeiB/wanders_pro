@@ -1,20 +1,29 @@
 .dropdownTextButton{
     display: flex;
     justify-content: space-between;
+    padding: 25px 0px;
 
 }
 .dropdownContainer{
     width: 770px;
     border-style: solid;
-    border-width: 1px 0;
+    border-width: 0 0 1px 0 ;
     border-color: #000;
 }
-
+.dropDownTitle{
+    font-size: 20px;
+    font-weight: 700;
+}
 .hiddenText{
     display: none;
 }
 .dropdownText{
     align-content: justify;
+    padding: 5px 0px;
+}
+.dropdownText p{
+    font-size: 16px;
+    font-weight: 400;
 }
 .picturesDown{
     width: 770px;
@@ -22,10 +31,15 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 25px 0;
+    margin: 25px 0px;
 }
 .picturesDown img{
     width: 248px;
     height: 162px;
     border-radius: 30px;
+}
+@media screen and (max-width:500px) {
+    .dropdownContainer{
+        width: 390px;
+    }
 }

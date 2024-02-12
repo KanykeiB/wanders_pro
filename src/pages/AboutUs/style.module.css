@@ -1,0 +1,210 @@
+.containerAboutUs{
+    width: 1020px;
+    margin: 200px auto;
+    position: relative;
+}
+.aboutUsText, .security{
+    border-radius: 50px;
+background: #F7F7F7;
+padding: 55px;
+}
+.aboutUsText h2{
+    font-size: 60px;
+    font-weight: 700;
+}
+.aboutUsText p{
+    font-size: 20px;
+    margin-top: 20px ;
+}
+.missionContainer{
+    width: 450px;
+    transform: rotate(-10deg);
+    padding: 28px 35px;
+    border-radius: 40px;
+    background:  #FE7A00;
+    position: absolute;
+    right:0%;
+    top: -2%;
+}
+.missionContainer p{
+    color: #F7F7F7;
+    font-size: 28px;
+}
+.rucksack{
+    position: absolute;
+    right:-5%;
+    top: 0%;
+}
+.tourTypes{
+    position: relative;
+    height: 600px;
+    margin-top: 30px;
+}
+.tourTypes p{
+    border-radius: 40px;
+    background: #E1F4D8;
+    display: inline-flex;
+    padding: 10px 25px 10px 15px;
+    align-items: center;
+    position: absolute;
+    font-size: 25px;
+font-weight: 700;
+}
+/* .tourTypes span{
+    border-radius: 50%;
+    background: #E1F4D8;
+    width: 30px;
+    height: 30px;
+} */
+.special, .mainTitle{
+    font-size: 80px;
+    font-weight: 700;
+}
+.special{
+    position: absolute;
+    top:25%;
+    right:20%;
+}
+.food{
+    top:0%;
+    right:0%;
+}
+.rest{
+    top:5%;
+    left:20%;
+}
+.eco{
+    top:20%;
+    right:5%;
+}
+.trip{
+    top:18%;
+    left:35%;
+}
+.photo{
+    top:15%;
+    left:0%;
+}
+.girly{
+    top:40%;
+    right:8%;
+}
+.manydays{
+    top:50%;
+    left:20%;
+}
+.camping{
+    top:60%;
+    right:15%;
+}
+.mountains{
+    top:70%;
+    left:5%;
+}
+
+.textCard {
+    text-align: right;
+}
+.textCard p {
+    width: 348px;
+    text-align: justify;
+    position: relative;
+    left:65%;
+}
+.textCard button{
+    width: 311px;
+    padding: 15px 50px;
+    border-radius: 30px;
+    background: #0FA958;
+    color:#F7F7F7;
+    border:none;
+    margin-top: 20px;
+}
+.buttonText{
+    border-radius: 50px;
+    border: 1px solid #282828;
+    opacity: 0.7;
+    padding: 8px 25px;
+    display: inline-block;
+}
+.security , .process, .tours, .locations{
+    text-align: center;
+    margin-top: 160px;
+    position: relative;
+}
+.stars{
+    position: absolute;
+    bottom: 80%;
+    left : 20%;
+}
+.stepWrap{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+.stepItem{
+    width: 206px;
+    text-align: left;
+}
+.cardsWrap{
+ display: flex;
+ justify-content: space-between;
+ padding-top: 80px;
+}
+.cardsWrap div{
+    border-radius: 30px;
+    background: #F7F7F7;
+    padding: 35px 25px 25px 25px;
+    text-align: left;
+    width: 300px;
+}
+.cardsWrap div h2{
+    font-size: 25px;
+font-weight: 700;
+}
+.cardsWrap div p{
+    font-size: 16px;
+    font-weight: 400;
+    opacity: 0.6;
+    padding-top: 10px;
+}
+.cardFirst{
+    transform: rotate(5.536deg);
+}
+.cardSecond{
+    transform: rotate(-4.977deg);
+}
+.cardThird{
+transform: rotate(5.783deg);
+}
+.stones{
+    position: absolute;
+    top: 28%;
+    left: 55%;
+}
+.vectorOne{
+    position: absolute;
+    top: 95%;
+    left: 10%;
+    z-index: -1;
+}
+.vectorTwo{
+    position: absolute;
+    top: 95%;
+    left: 50%;
+}
+.LinkWrap{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.seeMore{
+    width: 1020px;
+    padding: 28px 300px;
+    margin-top: 30px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background: #282828;
+    color: #F7F7F7;
+}

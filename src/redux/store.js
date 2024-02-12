@@ -9,5 +9,4 @@ import {tourReducers} from "./reducers/tourReducers";
 const rootReducer = combineReducers({
     tour: tourReducers,
 })
-const store = createStore(rootReducer, composeWithDevTools(applyMiddleware(thunk)))
-export {store}
+export const store = createStore(rootReducer, composeWithDevTools(applyMiddleware(thunk)))

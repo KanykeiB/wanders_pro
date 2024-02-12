@@ -4,8 +4,6 @@ import data from "../../components/mockApi"
 import Layout from "../../components/layout_for_SideBarAndHeader";
 
 const HomePage = () => {
-
-
     return (
         <Layout>
             <div >

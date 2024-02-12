@@ -1,9 +1,9 @@
 import React, {useEffect} from 'react';
 import {useDispatch, useSelector} from "react-redux";
-import {Box} from "@mui/material";
-import {tours} from "../../../redux/selectors/selectors";
+import {tours} from '../../../redux/selectors/selectors'
 import {getTourList} from "../../../redux/actions/tourActions";
 import TourCard from "../../../components/tourCard";
+import {Box} from "@mui/material";
 import Layout from "../../../components/layout_for_SideBarAndHeader";
 
 const ToursPage = () => {
