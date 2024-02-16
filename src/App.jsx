@@ -18,7 +18,7 @@ function App() {
           <Route exact path='/locations/' component={LocationPage} />
           <Route exact path='/locations/:locationSpec' component ={LocationPageById}/>
           <Route exact path='/tours/:category' component={ToursPage} />
-          <Route exact path='/tour/:id' component={TourPage} />
+          <Route exact path='/tour/:slug' component={TourPage} />
           <Route exact path='/test' component={TourPageById}/>
           <Route exact path='/aboutUs' component={AboutUs}/>
         </Switch>

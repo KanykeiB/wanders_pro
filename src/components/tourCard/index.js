@@ -6,9 +6,8 @@ import {Link} from "react-router-dom";
 
 
 const TourCard = ({tour}) => {
-
     return (
-        <Link to={`/tour/${tour.id}`} style={{textDecoration: 'none', color: 'unset'}}>
+        <Link to={`/tour/${tour.slug}`} style={{textDecoration: 'none', color: 'unset'}}>
             <Box
                 key={tour.id}
                 sx={card}
