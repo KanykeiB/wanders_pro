@@ -1,0 +1,20 @@
+.container{
+    max-width: 1000px;
+
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.col4{
+    width:33.33%;
+    padding: 10px;
+}
+
+.col6{
+    width: 50%;
+    padding: 5px;
+}
+.box{
+    margin: 10px;
+}

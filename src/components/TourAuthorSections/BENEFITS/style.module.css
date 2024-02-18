@@ -1,0 +1,101 @@
+.benefitsTitle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    align-items: center;
+    padding-top: 105px;
+    margin-bottom: 40px;
+}
+
+
+.benefitsTitle p {
+    border: 1px solid #282828;
+    padding: 8px 25px;
+    border-radius: 50px;
+    opacity: 70%;
+}
+
+.benefitsTitle h1{
+    font-size: 80px;
+}
+
+.titleWrap{
+    margin-top: 120px;
+    padding-bottom: 15px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1020px;
+    margin: 0 auto;
+}
+
+.col3 {
+    width: 25%;
+    padding: 10px;
+}
+
+
+
+.box {
+    background-color: #F7F7F7;
+    border-radius: 30px;
+    padding-top: 123px;
+    padding-left: 20px;
+    padding-right: 20px;
+    min-height: 280px;
+    position: relative;
+}
+
+.box h2 {
+    font-size: 25px;
+    color: #0FA958;
+    line-height: 25px;
+    font-weight: bold;
+}
+
+.box p {
+    padding-top: 5px;
+    font-size: 14px;
+    opacity: 60%;
+}
+
+.num {
+    position: absolute;
+    top: 27px;
+    left: 34px;
+}
+
+.pattern {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+}
+
+.patternTwo{
+    position: absolute;
+    top: 9.55px;
+    left: 21.64px;
+}
+
+.patternThree{
+    position: absolute;
+    top: 45px;
+    left: 23px;
+}
+
+.patternF1{
+    position: absolute;
+    top: 15px;
+    left: 50px;
+}
+
+.patternF2{
+    position: absolute;
+    top: 25px;
+    left: 50px;
+}
+
+

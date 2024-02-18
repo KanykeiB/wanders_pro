@@ -1,0 +1,10 @@
+.greenBtn{
+    padding: 15px 35.5px;
+    background-color: #0FA958;
+    font-size: 20px;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    min-width: 307px;
+    cursor: pointer;
+}

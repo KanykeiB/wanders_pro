@@ -1,0 +1,80 @@
+.heroWrap {
+    position: relative;
+    max-width: 1042px;
+    min-height: 561px;
+    margin: 120px auto -70px auto;
+
+}
+
+.title{
+    max-width: 744px;
+    margin-left: 62px;
+}
+
+.title h1 {
+    font-size: 87px;
+    line-height: 81px;
+}
+
+.groupImg {
+    position: absolute;
+    right: 145px;
+    top: -113px;
+    z-index: 999;
+}
+.greenBtnWrap{
+    position: absolute;
+    right: 215px;
+    top: 360px;
+    transform: rotate(-0.02turn);
+
+}
+
+span{
+    color: #FE7A00;
+}
+
+.desc1{
+    font-size: 20px;
+    background-color: #F7F7F7;
+    border-radius: 30px;
+    padding: 25px;
+    width: 236px;
+    transform: rotate(0.02turn);
+    position: absolute;
+    right: 0;
+    top: 69px;
+}
+.desc1 p{
+    opacity: 60%;
+    font-size: 20px;
+}
+.desc2{
+    font-size: 20px;
+    background-color: #F7F7F7;
+    border-radius: 30px;
+    padding: 25px;
+    width: 307px;
+    height: 136px;
+    position: absolute;
+    right: 230px;
+    bottom: 205px;
+    transform: rotate(-0.02turn);
+}
+
+.desc2 p{
+    opacity: 60%;
+    font-size: 20px;
+}
+
+.leftArrow{
+    position: absolute;
+    left: 460px ;
+    bottom: 160px;
+}
+
+.RightArrow{
+    position: absolute;
+    right: 145px;
+    bottom: 200px;
+}

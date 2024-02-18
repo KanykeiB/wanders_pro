@@ -12,7 +12,7 @@ function App() {
           <Route exact path='/' component={HomePage} />
           <Route exact path='/locations/' component={LocationPage} />
           <Route exact path='/locations/:locationSpec' component ={LocationPageById}/>
-          <Route exact path='/tours/:category' component={ToursPage} />
+          <Route exact path=' ' component={ToursPage} />
         </Switch>
       </header>
     </div>

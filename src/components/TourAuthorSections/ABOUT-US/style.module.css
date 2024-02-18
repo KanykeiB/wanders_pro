@@ -1,0 +1,45 @@
+.bg {
+    background-color: #F7F7F7;
+    padding: 50px 50px 54px 50px;
+    border-radius: 50px;
+    max-width: 1020px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.bg h1 {
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: bold;
+}
+
+.logo {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+}
+
+.eyesImg{
+    position: absolute;
+    top: 334px;
+    right: 43.44px;
+}
+
+.titleWrap {
+    width: 382px;
+    min-height: 120px;
+
+}
+
+.descWrap {
+    padding-top: 25px;
+    margin-right: 100px;
+}
+
+.descWrap p {
+    font-size: 20px;
+}
+
+.serviceDesc {
+    padding-bottom: 25px;
+}
