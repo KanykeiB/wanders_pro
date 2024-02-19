@@ -1,7 +1,8 @@
-import { GET_TOURS_LIST, GET_TOURS_BY_ID } from "../types/types";
+import { GET_TOURS_LIST, GET_TOURS_BY_ID, GET_TOURS_BY_TAG, GET_TOUR_TAGS } from "../types/types";
 
 const initialState = {
     tours: [],
+    tags:[],
     error: null,
     loading: false,
     data: {},
@@ -30,6 +31,10 @@ const tourReducers = (state = initialState, action) => {
         error: action.payload,
         data: null
       };
+    case GET_TOURS_BY_TAG:
+      return {...state, tours:action.payload};
+      case GET_TOUR_TAGS:
+        return {...state, tags:action.payload}
 
     default:
       return state;

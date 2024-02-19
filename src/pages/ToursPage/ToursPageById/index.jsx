@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useDispatch, useSelector } from "react-redux";
 import styles from './style.module.css'
-import tourDataOperations from '../../../redux/thunk/thunk'
+import {getTourById} from '../../../redux/thunk/thunk'
 import mockApiDataTour from '../../../components/mockApi/mockapiTourById';
 import DropDownText from '../../../components/dropdownText';
 import { Modal } from '@mui/material';
@@ -18,7 +18,7 @@ const difficultyLevel = { 'Base': 'Базовый *', 'Medium': 'Средний 
 const comfortLevel = { 'Base': 'Базовый *', 'Simple': 'Простой **', 'Medium': 'Средний ***', 'Above_average': 'Выше Среднего ****', 'High': 'Высокий *****' }
 const TourPageById = () => {
     const dispatch = useDispatch()
-    const { getTourById } = tourDataOperations;
+    // const { getTourById } = tourDataOperations;
     const [visibleImages, setVisibleImages] = useState(5)
     const [showAllProgram, setShowAllProgram] = useState(true)
     const [showAllAccom, setShowAllAccom] = useState(true)
@@ -38,7 +38,7 @@ const TourPageById = () => {
         setShowAllQues(!showAllQues)
     }
     useEffect(() => {
-        dispatch(tourDataOperations.getTourById('1-eto-nazvanie-tura'))
+        dispatch(getTourById('1-eto-nazvanie-tura'))
     }, [])
     // console.log(data, 'data from')
     // console.log(loadData, 'load')

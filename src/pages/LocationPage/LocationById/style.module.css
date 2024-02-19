@@ -7,6 +7,9 @@
     width: 1180px;
     margin: 0 auto;
 }
+.isMobile{
+    display: none;
+}
 
 .locationTitle{
     font-size: 60px;
@@ -65,6 +68,11 @@
     font-size: 18px;
     border: 1px solid #0FA958;
     margin-right: 10px;
+    outline: none;
+}
+.transportButton:focus{
+    background: #D4D4D466;
+    border: none;
 }
 .smallerText{
     font-weight: 700;
@@ -123,5 +131,38 @@
     height: 49%;
     object-fit: cover;
     border-radius: 0px 0px 30px 0px;
+}
+.description, .place, .coordiatesTitle,.smallerText,.mainText{
+    margin: 20px 0px;
+}
+@media screen and (max-width:500px) {
+    .locationTitle{
+        font-size: 36px;
+    }
+    .cardWDescSection{
+        display: block;
+    }
+    .lPicPart{
+        display: none;
+
+    }
+    .isMobile{
+        display: block;
+        margin: 50px 0px;
+        width: 400px;
+        height: 400px;
+    }
+    .mainText{
+        width: 400px;
+    }
+    .mySwiperSlide img {
+        width: 100%;
+    }
+    .description{
+        font-size: 32px;
+    }
+    .description, .place, .coordiatesTitle,.smallerText,.mainText{
+        margin: 20px 0px;
+    }
 }
 

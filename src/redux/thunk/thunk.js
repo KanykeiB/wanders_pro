@@ -1,6 +1,11 @@
 import axios from "axios";
 
-import {getTourByIdRequestActionCreator, getTourByIdReceiveActionCreator, getTourByIdFailureActionCreator} from '../actions/actions'
+import {getTourByIdRequestActionCreator, 
+            getTourByIdReceiveActionCreator, 
+            getTourByIdFailureActionCreator , 
+            getLocationByIdRequestActionCreator,
+            getLocationByIdReceiveActionCreator,
+            getLocationByIdFailureActionCreator} from '../actions/actions'
 
 const getTourById =(id) => async(dispatch)=>{
     dispatch (getTourByIdRequestActionCreator())
@@ -12,4 +17,14 @@ const getTourById =(id) => async(dispatch)=>{
     }
 }
 
-export default {getTourById}
+const getLocationById =(slug)=> async(dispatch)=>{
+    dispatch(getLocationByIdRequestActionCreator())
+    try{
+        const result = await axios.get(`http://16.171.152.174/location/${slug}/`)
+        dispatch(getLocationByIdReceiveActionCreator(result.data))
+    } catch (error){
+        dispatch(getLocationByIdFailureActionCreator(error))
+    }
+}
+
+export {getTourById, getLocationById}
