@@ -1,19 +1,24 @@
-.filtrationInput{
+.filtrationInput, .showTextWrap{
     display: flex;
     justify-content: space-between;
 }
+.modalTitle{
+    display: none
+}
+
 .modalWrap{
-    margin-bottom: 40px;
+    width: 1200px;
+    margin: 0px auto;
     border: 1px solid #CCCCCC;
     border-radius: 10px;
     padding: 30px 50px;
+    background-color: #fff;
 }
 .filtrationrow p{
     font-size: 20px;
     margin: 20px 0;
     font-weight: 600;
 }
-
 .customLabel{
     font-size: 20px;
 }
@@ -102,5 +107,38 @@
     }
     .visible{
         display: inline;
+        background: none;
+        border: none;
     }
+    .scrollableContainer {
+        width: 350px;
+        height: auto; 
+        overflow-y: auto; 
+    }
+    .showTextWrap{
+        width: 350px;
+    }
+    .resetFilter{
+        display: none;
+    }
+    .resultButtons{
+        display: block;
+        text-align: center;
+    }
+    .resultButtons p{
+        font-size: 25px;
+        margin-bottom: 30px;
+    }
+    .applyFilter{
+        font-size: 25px;
+        width: 350px;
+    }
+    .modalTitle{
+        display: flex;
+        justify-content: space-between;
+    }
+    .modalTitle p{
+        font-size: 20px;
+    }
+
 }
