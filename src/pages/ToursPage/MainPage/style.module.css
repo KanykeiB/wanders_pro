@@ -5,7 +5,12 @@
 .modalTitle{
     display: none
 }
-
+.selectedTagsCount{
+    font-size: 16px;
+    border: 1px solid #0FA958;
+    padding: 6px 12px 6px 12px;
+    border-radius: 8px;
+}
 .modalWrap{
     width: 1200px;
     margin: 0px auto;
@@ -21,6 +26,9 @@
 }
 .customLabel{
     font-size: 20px;
+}
+.buttonShowMore{
+    display: none;
 }
 .resultButtons{
     display: flex;
@@ -90,10 +98,31 @@
 .visible{
     display: none;
 }
+
 @media screen and (max-width:500px) {
     .modalWrap{
         padding: 30px 15px;
         width: 400px;
+    }
+    .filtrationrow .selectedTagsCount{
+        font-size: 16px;
+        border: 1px solid #0FA958;
+        padding: 4px 10px 4px 10px;
+        border-radius: 8px;
+        /* margin-left: 20px; */
+    }
+    .selectedTagsCount button{
+        width: 17px;
+        height: 17px;
+        border-radius: 50%;
+        background-color: black;
+        border: 1px solid black;
+        color: #fff;
+        font-size: 15px;
+        margin-left: 10px;
+        align-items: center;
+        display: inline-flex;
+        justify-content: center;
     }
     .filtrationInput{
         width: 400px;
@@ -109,6 +138,7 @@
         display: inline;
         background: none;
         border: none;
+        margin-left: 10px;
     }
     .scrollableContainer {
         width: 350px;
@@ -117,6 +147,7 @@
     }
     .showTextWrap{
         width: 350px;
+        align-items: center;
     }
     .resetFilter{
         display: none;
@@ -129,6 +160,9 @@
         font-size: 25px;
         margin-bottom: 30px;
     }
+    .buttonShowMore{
+        display: flex;
+    }
     .applyFilter{
         font-size: 25px;
         width: 350px;
@@ -139,6 +173,9 @@
     }
     .modalTitle p{
         font-size: 20px;
+    }
+    .invisible{
+        display: none;
     }
 
 }

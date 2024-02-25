@@ -1,0 +1,44 @@
+.buttonWrap{
+    display: flex;
+    justify-content: space-around;
+}
+.filterButton,.filterButtonAllOff, .filterButtonAll , .filterButtonItem{
+    padding:15px 17px;
+    background-color: #D9D9D9;
+    border: none;
+    border-radius: 35px;
+    font-size: 20px;
+}
+.filterButton{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 160px;
+}
+.filterButtonAll{
+    padding:15px 25px;
+    background-color: #282828;
+    color: #fff;
+}
+.filterButtonAllOff{
+    padding:15px 25px;
+    background-color: #fff;
+    color: black;
+    border: 1px solid #DADADA;
+}
+.filterButtonItem:hover, .filterButtonAll:hover{
+    background-color: #282828;
+    color: #fff;
+}
+.filterButtonItem:focus, .filterButtonAll:focus{
+    background-color: #282828;
+    color: #fff;
+}
+.filterButtonItems{
+    background-color: #DADADA;
+}
+.filterButtonItem{
+    padding: 15px;
+    background-color: #fff;
+    border: 1px solid #DADADA;
+}
