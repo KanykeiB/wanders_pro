@@ -35,7 +35,6 @@ const tourCurrencyOptions = {
   const typeTourOptions = {
     'AUTHORS': 'Авторский',
     'GROUP': 'Групповой',
-    'ALL' : 'Любой'
   };
   
 export { languageChoice, difficultyLevel, comfortLevel , tourCurrencyOptions, typeAccommodationOptions, difficultyLevelOptions, comfortLevelOptions, insuranceConditionsOptions, typeTourOptions };
