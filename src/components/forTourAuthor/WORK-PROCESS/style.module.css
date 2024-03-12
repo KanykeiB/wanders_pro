@@ -1,0 +1,51 @@
+.workWrap{
+    max-width: 1020px;
+    margin: 0 auto;
+    background-color: #F7F7F7;
+    margin-top: 129px;
+    padding-bottom: 93px;
+    border-radius: 50px;
+    position: relative;
+
+}
+
+.starImg{
+    position: absolute;
+    left: 180px;
+    top: -89px;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 917px;
+    margin: 0 auto;
+}
+.col3{
+    width: 25%;
+    padding:15px;
+}
+
+.box{
+
+}
+
+.box h2{
+    color: #0FA958;
+    font-size: 18px;
+    display: inline-block;
+    border: 1px solid #D9D9D9;
+    border-radius: 10px;
+    padding: 8px;
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+
+.title{
+    padding-top: 70px;
+    padding-bottom: 50px;
+}
+
+p{
+    font-size: 20px;
+}

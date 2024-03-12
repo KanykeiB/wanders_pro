@@ -1,0 +1,122 @@
+
+.app_header_search {
+    display: block;
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 880px;
+}
+
+.searchAndDatePicker {
+    padding: 23px 16px 23px 0;
+    border-radius: 50px;
+    border: 3px solid #0FA958;
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.search {
+    color: #6E6E6E;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    text-overflow: ellipsis;
+}
+
+[data-text-field] {
+    width: 100%;
+    resize: none;
+}
+
+.compactDivider {
+    background: #ecedf0;
+    /*display: none;*/
+    height: 42px;
+    margin: 0;
+    width: 1px;
+}
+
+.compact_search {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.as_input_search {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    overflow: hidden;
+}
+
+.search_icon {
+    padding-left: 28px;
+    padding-right: 10px;
+}
+
+
+
+.searchBtn {
+    color: #FFF !important;
+    border-radius: 35px !important;
+    background: #0FA958 !important;
+    padding: 10px 22px !important;
+    border: none !important;
+    cursor: pointer !important;
+    overflow: hidden !important;
+}
+
+.button_body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    line-height: normal !important;
+    height: inherit;
+    transition: opacity .2s,transform .3s cubic-bezier(.34,1.7,.4,1);
+    transition-delay: .3s;
+}
+
+@media screen and (max-width: 575px) {
+    .searchAndDatePicker {
+        border-radius: 30px;
+        flex-direction: column;
+        align-items: stretch;
+        padding: 23px 16px;
+        border: 1px solid rgba(153, 153, 169, 0.50);
+        background: #FFF;
+        box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.25);
+    }
+
+    .as_input_search {
+        min-height: 60px
+    }
+
+    .compact_search:first-child {
+        border-bottom: 1px solid #ecedf0;
+    }
+
+    .compactDivider {
+        display: none;
+    }
+
+    .searchBtn {
+        margin-top: 21px !important;
+        padding: 16px 0 !important;
+        border-radius: 20px !important;
+    }
+    .button_body {
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-align: center;
+    }
+}
+

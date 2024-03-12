@@ -1,0 +1,21 @@
+.GroupImg{
+    position: relative;
+}
+
+.suitcase{
+    position: absolute;
+    top: 47.42px;
+    left: 140px;
+}
+
+.signPost{
+    position: absolute;
+    left: 28.42px;
+    bottom: 123.41px;
+}
+
+.boardPass{
+    position: absolute;
+    bottom: 24.8px;
+    left: -30px;
+}

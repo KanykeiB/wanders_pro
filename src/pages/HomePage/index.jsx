@@ -12,6 +12,7 @@ import FirstBlock from "../../components/HomePgBlocks/FirstBlock";
 
 const HomePage = () => {
 
+
     return (
         <div  className={'container'}>
             <FirstBlock/>

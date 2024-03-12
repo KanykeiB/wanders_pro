@@ -1,0 +1,55 @@
+.titleWrap{
+    margin-bottom: 40px;
+    margin-top: 147px;
+    position: relative;
+}
+
+.Title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    align-items: center;
+}
+
+.whiteBtn{
+    padding: 8px 25px;
+    border: 1px solid #282828;
+    border-radius: 50px;
+    opacity: 70%;
+    background-color: unset;
+    cursor: pointer;
+}
+
+.Title h1{
+    font-size: 80px;
+}
+
+.emoji1{
+    position: absolute;
+    top: -73px;
+    right: 620px;
+}
+
+.emoji2{
+    position: absolute;
+    top: -26px;
+    right: 680px;
+}
+
+.dropdownWrapper{
+    max-width: 1020px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.dropdownCol{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 50%;
+    padding: 10px;
+}
+
