@@ -9,7 +9,7 @@ const ForWhom = () => {
                 <TitleWrap button={'для кого'} h1={'Кто может разместить тур'}/>
             </div>
             <div>
-                <img src={ForImg} alt=""/>
+                <img className={style.imageForWhom} src={ForImg} alt=""/>
             </div>
         </div>
     );

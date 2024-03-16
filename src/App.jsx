@@ -4,7 +4,7 @@ import LocationPage from './pages/LocationPage/MainPage';
 // import LocationPageById from './pages/LocationPage/LocationById/MainPage';
 import ToursPage from './pages/ToursPage/MainPage';
 import TourPageById from './pages/ToursPage/ToursPageById';
-import DropDownText from './components/dropdownText';
+// import DropDownText from './components/dropdownText';
 import LocationPageById from './pages/LocationPage/LocationById';
 import TourPage from "./pages/TourPage";
 import ForTourAuthorPage from "./pages/ForTourAuthorPage";
