@@ -16,7 +16,7 @@ const HomePage = () => {
 
 
     return (
-        <div  className={'container'}>
+        <div className={'container2'} >
             <FirstBlock/>
             <TourCardHomePage/>
             <CollectionContainer 

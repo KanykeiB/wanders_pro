@@ -24,4 +24,8 @@
   width: 25%;
   padding: 0 15px;
 }
+.container2{
+  max-width: 1180px;
+  margin: 0 auto;
+}
 

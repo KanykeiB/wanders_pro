@@ -9,7 +9,7 @@ import image6 from '../assests/Frame 145968.png'
 
 const FirstBlock = () => {
     return (
-        <div className={styles.container}>
+            <div>
             <div className={styles.row}>
                 <div className={styles.col4}>
                     <div className={styles.box}>

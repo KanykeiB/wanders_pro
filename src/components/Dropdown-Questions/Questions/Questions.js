@@ -3,7 +3,7 @@ import Dropdown from "../Dropdown";
 import style from './style.module.css'
 import emoji1 from '../../assests/image 576.png'
 import emoji2 from '../../assests/image 577.png'
-import DropdownText from "../../dropdownText";
+
 
 
 const Questions = () => {

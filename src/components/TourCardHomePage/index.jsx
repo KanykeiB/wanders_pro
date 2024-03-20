@@ -41,7 +41,7 @@ const TourCardHomePage = () => {
     };
 
     return (
-        <Box className={'container'}>
+        <Box>
             <Box className={'row'}>
                 {data.slice(visibleCards - 4, visibleCards).map(tour => (
                     <Box className={'col-3'} sx={{ marginBottom: '20px' }} key={tour.id}>
