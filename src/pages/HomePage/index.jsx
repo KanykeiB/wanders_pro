@@ -11,12 +11,12 @@ import TourCardHomePage from "../../components/TourCardHomePage";
 
 
 
-
 const HomePage = () => {
 
 
     return (
         <div className={'container2'} >
+
             <FirstBlock/>
             <TourCardHomePage/>
             <CollectionContainer 

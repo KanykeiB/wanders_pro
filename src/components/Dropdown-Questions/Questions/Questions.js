@@ -8,7 +8,7 @@ import emoji2 from '../../assests/image 577.png'
 
 const Questions = () => {
     return (
-        <div>
+        <div className={style.faqContainer}>
             <div className={style.Title}>
                 <button className={style.whiteBtn}>вопросы-ответы</button>
                 <h1>Часто задаваемые вопросы</h1>

@@ -9,19 +9,19 @@ import image6 from '../assests/Frame 145968.png'
 
 const FirstBlock = () => {
     return (
-            <div>
+            <div className={styles.con}>
             <div className={styles.row}>
                 <div className={styles.col4}>
                     <div className={styles.box}>
                         <div>
-                            <img src={image1} alt=""/>
+                            <img className={styles.bigImage} src={image1} alt=""/>
                         </div>
                     </div>
                 </div>
                 <div className={styles.col4}>
                     <div className={styles.box}>
                         <div>
-                            <img src={image2} alt=""/>
+                            <img className={styles.bigImage} src={image2} alt=""/>
                         </div>
                     </div>
                 </div>
@@ -30,14 +30,14 @@ const FirstBlock = () => {
                         <div className={styles.row}>
                             <div className={styles.col6}>
                                 <div className={styles.box}>
-                                    <img src={image3} alt=""/>
-                                    <img src={image4} alt=""/>
+                                    <img className={styles.smallImage} src={image3} alt=""/>
+                                    <img className={styles.smallImage} src={image4} alt=""/>
                                 </div>
                             </div>
                             <div className={styles.col6}>
                                 <div className={styles.box}>
-                                    <img src={image5} alt=""/>
-                                    <img src={image6} alt=""/>
+                                    <img className={styles.smallImage} src={image5} alt=""/>
+                                    <img className={styles.smallImage} src={image6} alt=""/>
                                 </div>
                             </div>
                         </div>

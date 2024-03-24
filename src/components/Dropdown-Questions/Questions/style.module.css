@@ -10,6 +10,7 @@
     justify-content: center;
     gap: 5px;
     align-items: center;
+    position: relative;
 }
 
 .whiteBtn{
@@ -28,13 +29,13 @@
 .emoji1{
     position: absolute;
     top: -73px;
-    right: 620px;
+    right: 420px;
 }
 
 .emoji2{
     position: absolute;
-    top: -26px;
-    right: 680px;
+    top: -46px;
+    right: 480px;
 }
 
 .dropdownWrapper{
@@ -51,5 +52,9 @@
     gap: 10px;
     width: 50%;
     padding: 10px;
+}
+
+.faqContainer{
+    margin-top: 90px;
 }
 

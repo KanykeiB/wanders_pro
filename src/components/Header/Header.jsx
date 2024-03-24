@@ -9,8 +9,6 @@ import UserDropdownMenu from "../userDropdownMenu/userDropdownMenu";
 
 const Header = () => {
 
-
-
     return (
         <Box className={headerStyle.header}>
             <Box>

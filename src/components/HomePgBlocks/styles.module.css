@@ -1,18 +1,25 @@
-/*.container{*/
-/*    max-width: 1000px;*/
 
-/*}*/
+.con{
+    max-width: 1006px;
+    margin: 60px auto;
+}
 .row{
     display: flex;
     flex-wrap: wrap;
 }
 .col4{
     width:33.33%;
-    padding: 10px;
+
 }
 
 .col6{
     width: 50%;
-    padding: 5px;
+
 }
 
+.bigImage{
+    width: 324px;
+}
+.smallImage{
+    width: 157px;
+}
